@@ -27,8 +27,8 @@ def greet_user():
 
 def leave_message():
     messages = [
-        "Mukhang walang sumasagot. Nandito lang ako kung kailangan mo ako. Magandang araw!",
-        "Walang sagot na natukoy. Pa alam!",
+        "Mukhang walang sumasagot. Nandito lang ako kung kailangan mo ako",
+        "Walang sagot na natukoy. ",
     ]
     return messages
 
