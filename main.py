@@ -19,9 +19,9 @@ def speak(audio):
 
 def greet_user():
     greetings = [
-        "Hi, ako si Jocelyn! Paano kita matutulungan ngayon?",
-        "Hello! Sana ay maganda ang araw mo!",
-        "Kumusta! Ano ang maitutulong ko sa iyo?"
+        "Hi, ako si IMISS! if meron kang tanong just ask me",
+        # "Hello! Sana ay maganda ang araw mo!",
+        # "Kumusta! Ano ang maitutulong ko sa iyo?"
     ]
     return greetings
 
@@ -29,6 +29,12 @@ def leave_message():
     messages = [
         "Mukhang walang sumasagot. Nandito lang ako kung kailangan mo ako",
         "Walang sagot na natukoy. ",
+    ]
+    return messages
+
+def jocelyn():
+    messages = [
+        "Oo kilala ko si jocelyn siya yung nag papang-gap na may jowa pero sa totoo wala siyang jowa",
     ]
     return messages
 
@@ -84,6 +90,8 @@ while True:
             # Respond to specific keywords
             if "hello" in word or "hi" in word:
                 response_message = "Hello! Paano kita matutulungan?"
+            elif "Jocelyn" in word:
+                response_message = jocelyn()
             elif "weather" in word:
                 response_message = get_weather()
             else:
