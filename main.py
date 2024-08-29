@@ -20,7 +20,7 @@ def speak(audio):
 
 def greet_user():
     greetings = [
-        "jocelyn jocelyn jocelyn jocelyn sa takdang panahon",
+        "salamin salamin salamin sa ding ding ni jocelyn",
     ]
     return random.choice(greetings)
 
